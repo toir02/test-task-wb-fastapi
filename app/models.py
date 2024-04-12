@@ -3,8 +3,9 @@ from sqlalchemy import (
     Integer,
     JSON
 )
+from sqlalchemy.ext.declarative import declarative_base
 
-from app.database import Base
+Base = declarative_base()
 
 
 class Record(Base):
